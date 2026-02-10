@@ -56,7 +56,7 @@ if __name__ == "__main__":
             break
 
         # Check for website commands
-        sites = [
+        sites = {
     ["Google", "https://www.google.com"],
     ["YouTube", "https://www.youtube.com"],
     ["Facebook", "https://www.facebook.com"],
@@ -160,7 +160,7 @@ if __name__ == "__main__":
     ["Remove.bg", "https://www.remove.bg"],
     ["Photopea", "https://www.photopea.com"],
     ["Kaggle", "https://www.kaggle.com"],
-]
+        }
 
 
         opened_site = False
@@ -173,3 +173,4 @@ if __name__ == "__main__":
 
         if not opened_site:
             chat(prompt=query)
+
